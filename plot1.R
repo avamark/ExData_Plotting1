@@ -15,7 +15,7 @@ hist(ds$Global_active_power,col="red",
      xlab="Global Active Power (Kilowatts)",
      main="Global Active Power"
      )
-png(file = "plot1.png", bg = "transparent",width=480,height=480,units="px")
+png(file = "plot1.png", ,width=480,height=480,units="px")
 hist(ds$Global_active_power,col="red",
      xlab="Global Active Power (Kilowatts)",
      main="Global Active Power"
