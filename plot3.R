@@ -22,7 +22,7 @@ df<-ds[ds$dtf>"2007-01-10" & ds$dtf<"2007-01-13"
 with(df
      ,plot(dtime,Sub_metering_1
            ,type="l"
-           ,ylab="Global Active Power (Kilowatts)"
+           ,ylab="Energy Sub Metering"
            ,xlab=""
 #            ,xlim=as.POSIXct(c("2007-01-03","2007-01-07"))
            )
@@ -38,7 +38,7 @@ png(file = "plot3.png",,width=480,height=480,units="px")
 with(df
      ,plot(dtime,Sub_metering_1
            ,type="l"
-           ,ylab="Global Active Power (Kilowatts)"
+           ,ylab="Energy Sub Metering"
            ,xlab=""
            #            ,xlim=as.POSIXct(c("2007-01-03","2007-01-07"))
      )
