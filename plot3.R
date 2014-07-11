@@ -19,12 +19,12 @@ df<-ds[ ,c("dtime","Sub_metering_1","Sub_metering_2","Sub_metering_3")]
 # #            ,xlim=as.POSIXct(c("2007-01-03","2007-01-07"))
 #            )
 #     )
-lines(df$dtime,df$Sub_metering_2,col="red")
-lines(df$dtime,df$Sub_metering_3,col="blue")
-legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3")
-       ,col=c("black","red","blue")
-       ,lty=1,lwd=2
-      )
+# lines(df$dtime,df$Sub_metering_2,col="red")
+# lines(df$dtime,df$Sub_metering_3,col="blue")
+# legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3")
+#        ,col=c("black","red","blue")
+#        ,lty=1,lwd=2
+#       )
 #plot on png file
 png(file = "plot3.png",,width=480,height=480,units="px")
 with(df

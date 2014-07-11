@@ -107,10 +107,7 @@ with(ds[,c("dtime","Global_reactive_power")]
 )
 }
 #========== PROGRAM TO RUN =================================
-#set file.name containing data
 
-#read data
-readData(file.name)
 #plot to png file
 plot2png()
 #plot to screen if you want to
