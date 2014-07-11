@@ -58,7 +58,10 @@ with(ds[,c("dtime","Global_reactive_power")]
 )
 
 dev.off()
+}
 #----------------------------------------------------------------
+#define plot2screen function
+plot2screen<- function(){
 #plot on screen
 df<-ds[,c("dtime","Sub_metering_1","Sub_metering_2"
           ,"Sub_metering_3","Voltage","Global_reactive_power")]
@@ -79,10 +82,7 @@ with(df
            #            ,xlim=as.POSIXct(c("2007-01-03","2007-01-07"))
      )
 )
-}
 
-#define plot2screen function
-plot2screen<- function(){
 #plot Sub_metering
 with(df
      ,plot(dtime,Sub_metering_1
@@ -115,4 +115,4 @@ readData(file.name)
 plot2png()
 #plot to screen if you want to
 #uncoment next line to plot on screen
-plot2screen()
+# plot2screen()
